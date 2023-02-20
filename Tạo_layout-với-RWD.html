@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo layout với RWD</title>
+</head>
+<style>
+     * {
+            box-sizing: border-box;
+        }
+    .menu-horizontal{
+        overflow: hidden;
+        background-color: rgb(107, 118, 118);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .menu-horizontal h1{
+        display: inline-block;
+        margin: auto;
+        padding: 10px;
+    }
+    .menu{
+        font-size: larger;
+        display: inline-block;
+    }
+    .menu:hover{
+        background-color: rgb(107, 118, 118);
+        color: aqua;
+    }
+    .login{
+        display: inline-block;
+        float: right;
+       padding-top: 20px;
+       padding-right: 10px;
+    }
+    .left-link{
+        float: left;
+        width: 20%;
+    }
+    .left-link ul{
+        list-style-type: none;
+    }
+    .left-link li a {
+        padding: 5px;
+        text-decoration: none;
+    }
+    main{
+        background-color: rgb(104, 145, 145);
+        margin-top: 5px;
+        overflow: hidden;
+        background-color: ;
+    }
+    .main{
+        background-color: aliceblue;
+        width: 60%;
+        padding: 0 20px;
+        overflow: hidden;
+        float: left;
+    }
+    .right{
+
+        overflow: hidden;
+        width: 20%;
+        padding: 20px;
+        float: left;
+    }
+   .ads{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        margin:3px;
+        padding-left: 14px;
+        padding-top: 15px;;
+    }
+    footer{
+        clear: both;
+    }
+    footer p {
+        background-color: rgb(0, 211, 211);
+        text-align: center;
+    }
+    @media only screen and (max-width:800px) {
+            /* For tablets: */
+        .main {
+            width: 80%;
+            padding: 0;
+        }
+        .right {
+        width: 100%;
+        }
+        }
+        @media only screen and (max-width:500px) {
+        /* For mobile phones: */
+        .menu-horizontal, .main, .right {
+        width: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <div class="menu-horizontal ">
+            <h1>Logo</h1>
+            <div class="menu">Home</div>
+            <div class="menu">About</div>
+            <div class="menu">Projects</div>
+            <div class="login">Login</div>
+        </div>
+    </header>
+    <main>
+        <div class="left-link">
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>Lorem ipsum</h1>
+            <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.
+               
+            </p>
+            <h2>Test</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="right">
+            <div class="ads">Ads</div>
+            <div class="ads">Ads</div>
+        </div>
+    </main>
+    <footer>
+        <p>Footer text</p>
+    </footer>
+</body>
+</html>
